@@ -6,7 +6,7 @@ This Python script uses the [ucsmsdk](https://ucsmsdk.readthedocs.io/en/latest/)
 ## Workflow
 
 * Create VLAN Group
-* Create VLANs, assign it them to the VLAN Group
+* Create VLANs, assign them to the VLAN Group
 * Asign VLAN Group to the vNIC 
 
 
