@@ -78,7 +78,7 @@ if __name__ == "__main__":
     except Exception as e:
         logger.error(f"{e} - Creating VLAN Group {vlan_group_name}")
 
-    # Create/Delete VLAN MOs
+    # Create/Delete VLAN MOs add to VLAN Group
     for vlan_id in range(int(initial_vlan), int(ending_vlan) + 1):
         vlan_mo = FabricVlan(parent_mo_or_dn='fabric/lan', name=f"{vlan_name_prefix}-{vlan_id}", id=str(vlan_id))
         vlan_to_group_mo = FabricPooledVlan(parent_mo_or_dn=vlan_group_mo, name=f"{vlan_name_prefix}-{vlan_id}")
